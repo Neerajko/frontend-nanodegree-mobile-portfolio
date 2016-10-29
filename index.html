@@ -1,55 +1,117 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
+
   <head>
-    <meta charset="UTF-8">
-    <title>frontend-nanodegree-mobile-portfolio by Neerajko</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="frontend-nanodegree-mobile-portfolio : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>frontend-nanodegree-mobile-portfolio</title>
   </head>
+
   <body>
-    <section class="page-header">
-      <h1 class="project-name">frontend-nanodegree-mobile-portfolio</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/Neerajko/frontend-nanodegree-mobile-portfolio" class="btn">View on GitHub</a>
-      <a href="https://github.com/Neerajko/frontend-nanodegree-mobile-portfolio/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Neerajko/frontend-nanodegree-mobile-portfolio/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
 
-    <section class="main-content">
-      <p><code>*</code>### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Neerajko/frontend-nanodegree-mobile-portfolio">View on GitHub</a>
+
+          <h1 id="project_title">frontend-nanodegree-mobile-portfolio</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Neerajko/frontend-nanodegree-mobile-portfolio/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Neerajko/frontend-nanodegree-mobile-portfolio/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="website-performance-optimization-portfolio-project" class="anchor" href="#website-performance-optimization-portfolio-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Website Performance Optimization portfolio project</h2>
+
+<p>Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the <a href="https://www.udacity.com/course/ud884">Critical Rendering Path course</a>.</p>
+
+<p>To get started, check out the repository and inspect the code.</p>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting started</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<h4>
+<a id="part-1-optimize-pagespeed-insights-score-for-indexhtml" class="anchor" href="#part-1-optimize-pagespeed-insights-score-for-indexhtml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 1: Optimize PageSpeed Insights score for index.html</h4>
+
+<p>Some useful tips to help you get started:</p>
+
+<ol>
+<li>Check out the repository</li>
+<li>
+<p>To inspect the site on your phone, you can run a local server
+<a href="index.html">index.html</a></p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> <span class="pl-c1">cd</span> /path/to/your-project-folder
+$<span class="pl-k">&gt;</span> python -m SimpleHTTPServer 8080</pre></div>
+</li>
+<li><p>Open a browser and visit localhost:8080</p></li>
+<li>
+<p>Download and install <a href="https://ngrok.com/">ngrok</a> to the top-level of your project directory to make your local server accessible remotely.</p>
+
+<div class="highlight highlight-source-shell"><pre>$<span class="pl-k">&gt;</span> <span class="pl-c1">cd</span> /path/to/your-project-folder
+$<span class="pl-k">&gt;</span> ./ngrok http 8080</pre></div>
+</li>
+<li><p>Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: <a href="http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/">More on integrating ngrok, Grunt and PageSpeed.</a></p></li>
+</ol>
+
+<p>Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!</p>
+
+<h4>
+<a id="part-2-optimize-frames-per-second-in-pizzahtml" class="anchor" href="#part-2-optimize-frames-per-second-in-pizzahtml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 2: Optimize Frames per Second in pizza.html</h4>
+
+<p>To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. </p>
+
+<p>You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: <a href="https://developer.chrome.com/devtools/docs/tips-and-tricks">Chrome Dev Tools tips-and-tricks</a>.</p>
 
 <h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<a id="optimization-tips-and-tricks" class="anchor" href="#optimization-tips-and-tricks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optimization Tips and Tricks</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/" title="web performance">Optimizing Performance</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp.html" title="analyzing crp">Analyzing the Critical Rendering Path</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path.html" title="optimize the crp!">Optimizing the Critical Rendering Path</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css.html" title="render blocking css">Avoiding Rendering Blocking CSS</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript.html" title="javascript">Optimizing JavaScript</a></li>
+<li>
+<a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp.html" title="nav timing api">Measuring with Navigation Timing</a>. We didn't cover the Navigation Timing API in the first two lessons but it's an incredibly useful tool for automated page profiling. I highly recommend reading.</li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/eliminate-downloads.html">The fewer the downloads, the better</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer.html">Reduce the size of text</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization.html">Optimize images</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching.html">HTTP caching</a></li>
+</ul>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a id="customization-with-bootstrap" class="anchor" href="#customization-with-bootstrap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Customization with Bootstrap</h3>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstrap</a> framework. All custom styles are in <code>dist/css/portfolio.css</code> in the portfolio repo.</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li><a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a></li>
+<li><a href="http://getbootstrap.com/components/">Bootstrap's Components</a></li>
+</ul>
+      </section>
+    </div>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Neerajko/frontend-nanodegree-mobile-portfolio">frontend-nanodegree-mobile-portfolio</a> is maintained by <a href="https://github.com/Neerajko">Neerajko</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">frontend-nanodegree-mobile-portfolio maintained by <a href="https://github.com/Neerajko">Neerajko</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+    </div>
 
-    </section>
+    
 
-  
   </body>
 </html>
